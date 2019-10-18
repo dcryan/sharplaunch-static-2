@@ -161,8 +161,7 @@
 }
 
 .management {
-  // background-image: url("../img/background1.png");
-  background-color: lightblue;
+  background-image: url("../img/background1.png");
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -237,7 +236,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1100px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -284,6 +283,10 @@
       margin-top: 32px;
       display: flex;
       flex-wrap: wrap;
+
+      @include breakpoint(medium down) {
+        justify-content: space-between;
+      }
     }
 
     &__attribute {
@@ -306,15 +309,28 @@
       background: $white;
       justify-content: space-between;
       flex-direction: row;
-      height: 450px;
       padding: 0;
       border-radius: 5px;
+
+      @include breakpoint(medium down) {
+        flex-direction: column-reverse;
+      }
     }
 
 
     &__map img {
       border-radius: 0 5px 5px 0;
-      height: 100%;
+
+      @include breakpoint(large) {
+        height: 100%;
+      }
+
+      @include breakpoint(medium down) {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 300px;
+        flex-direction: column-reverse;
+      }
     }
   }
 }
