@@ -1,0 +1,103 @@
+.gallery {
+  background-image: url("../img/gallery-background.png");
+  background-position: center;
+  padding-top: 32px;
+  padding-left: 0;
+  padding-right: 0;
+
+  .overlay {
+    display: none;
+  }
+
+  &__carousel {
+    position: relative;
+  }
+
+  &__carousel-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    cursor: pointer;
+
+    width: 16px;
+    height: 16px;
+    background: blue;
+  }
+
+  &__carousel-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    cursor: pointer;
+
+    width: 16px;
+    height: 16px;
+    background: blue;
+  }
+
+  $carousel-dot-size: 10px;
+
+  &__carousel-dots {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -32px - $carousel-dot-size;
+  }
+
+  &__carousel-dot {
+    width: $carousel-dot-size;
+    height: $carousel-dot-size;
+    border-radius: $carousel-dot-size;
+    background-color: $white;
+    margin: 0 4px;
+    z-index: 1;
+
+    &--selected {
+      background-color: $persian-blue;
+    }
+  }
+
+  &__carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  &__carousel-thumbnail {
+    margin: 0 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &--selected {
+      border-color: $persian-blue;
+    }
+  }
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: flex-start;
+
+
+
+  @include breakpoint(small only) {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    @include breakpoint(small only) {
+      flex-direction: column;
+    }
+  }
+
+
+  @include breakpoint(small only) {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  height: 88px;
+  box-shadow: 0 8px 24px 0 rgba($almost-black, 0.1);
+  background-color: $white;
+  position: relative;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    display: flex;
+
+    &-card-container {
+      display: table;
+      box-shadow: 0 8px 24px 0 rgba($almost-black, 0.1);
+    }
+
+    img {
+      margin: auto;
+    }
+  }
+
+  &__nav-group {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-button {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.17px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 16px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a {
+      white-space: nowrap;
+      color: $metal-black;
+    }
+  }
+
+  &__menu-button {
+    margin-right: 32px;
+  }
+
+  .hamburger {
+    cursor: pointer;
+
+    div {
+      height: 5px;
+      width: 33px;
+      background: $almost-black;
+      margin: 0 0 3px;
+      border-radius: 3px;
+    }
+
+    &:hover {
+      opacity: 1;
+      transition: .2s;
+    }
+
+    &.active {
+      margin-top: 3px;
+
+      .hamburger-bun {
+        margin: 0;
+        -webkit-transform-origin: center center;
+        -moz-transform-origin: center center;
+        -o-transform-origin: center center;
+        transform-origin: center center;
+
+        &:first-child {
+          transform: rotate(45deg);
+          transition: .2s;
+          margin-top: 6px;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+          transition: .2s;
+          margin-top: -6px;
+        }
+      }
+
+      .hamburger-patty {
+        display: none;
+      }
+    }
+  }
+
+
+  /*
+   * Modifiers
+   */
+
+  &--fixed {
+    position: fixed;
+    z-index: 1;
+  }
+
+  &--black {
+    background-color: $almost-black;
+  }
+
+  &--white-opaque {
+    background-color: rgba($white, .9)
+  }
+
+  &--black-opaque {
+    background-color: rgba($almost-black, .9);
+  }
+
+  &--black,
+  &--black-opaque {
+    .hamburger div {
+      background-color: $white;
+    }
+
+    .header__nav-button {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+}

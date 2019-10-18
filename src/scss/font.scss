@@ -1,0 +1,39 @@
+// Not sure what font-weight this is
+// @font-face {
+//   font-family: Graphik;
+//   src: url('../font/Graphik-Black.otf') format('opentype'),
+//     url('../font/Graphik-Black.otf');
+//   font-weight: 600;
+// }
+
+@font-face {
+  font-family: Graphik;
+  src: url('../font/Graphik-Bold.otf') format('opentype'),
+    url('../font/Graphik-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../font/Graphik-Medium.otf') format('opentype'),
+    url('../font/Graphik-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../font/Graphik-Regular.otf') format('opentype'),
+    url('../font/Graphik-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url('../font/Graphik-Semibold.otf') format('opentype'),
+    url('../font/Graphik-Semibold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
