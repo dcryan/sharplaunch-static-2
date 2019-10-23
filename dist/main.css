@@ -3547,7 +3547,8 @@ button,
       background: rgba(3, 82, 165, 0.8);
       opacity: 0;
       -webkit-transition: opacity .2s;
-      transition: opacity .2s; }
+      transition: opacity .2s;
+      cursor: pointer; }
       .gallery-grid .photo-container .overlay .icon-zoom:before {
         content: "\69"; }
       .gallery-grid .photo-container .overlay i {
@@ -3558,9 +3559,18 @@ button,
         top: 50%;
         margin-top: -25px;
         margin-left: -25px;
-        color: #FFF; }
+        color: #FFF;
+        -webkit-transition: -webkit-transform .2s;
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        transition: transform .2s, -webkit-transform .2s;
+        -webkit-transform: scale(2);
+                transform: scale(2); }
       .gallery-grid .photo-container .overlay:hover {
         opacity: 1; }
+        .gallery-grid .photo-container .overlay:hover i {
+          -webkit-transform: scale(1);
+                  transform: scale(1); }
   @media screen and (max-width: 63.99875em) {
     .gallery-grid {
       -webkit-box-orient: vertical;

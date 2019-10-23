@@ -94,6 +94,7 @@
       background: rgba(3, 82, 165, .8);
       opacity: 0;
       transition: opacity .2s;
+      cursor: pointer;
 
       .icon-zoom:before {
         content: "\69";
@@ -108,10 +109,16 @@
         margin-top: -25px;
         margin-left: -25px;
         color: #FFF;
+        transition: transform .2s;
+        transform: scale(2);
       }
 
       &:hover {
         opacity: 1;
+
+        i {
+          transform: scale(1);
+        }
       }
     }
   }
