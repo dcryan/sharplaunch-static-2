@@ -5,6 +5,8 @@
   line-height: 40px;
   letter-spacing: 0px;
 
+  padding-top: 32px;
+
   $separator-length: 30px;
 
   & .separator {
@@ -27,7 +29,7 @@
     height: 2px;
     background-color: $persian-blue;
     position: absolute;
-    top: 50%;
+    top: 37%;
   }
 
   & .separator--white::before,

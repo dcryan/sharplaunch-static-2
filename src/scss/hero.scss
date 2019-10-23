@@ -7,7 +7,9 @@
   justify-content: center;
   flex-direction: column;
 
+  background-image: url("../img/hero-image.png");
   background-position: center;
+  background-size: cover;
 
   @include breakpoint(medium down) {
     height: 650px;

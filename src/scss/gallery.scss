@@ -1,16 +1,17 @@
 .gallery {
   background-image: url("../img/gallery-background.png");
   background-position: center;
-  padding-top: 32px;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 32px;
 
-  .overlay {
-    display: none;
-  }
 
   &__carousel {
     position: relative;
+
+    img {
+      margin: auto;
+    }
   }
 
   &__carousel-arrow-left {
@@ -51,6 +52,7 @@
     background-color: $white;
     margin: 0 4px;
     z-index: 1;
+    cursor: pointer;
 
     &--selected {
       background-color: $persian-blue;
@@ -78,26 +80,169 @@
   display: flex;
   justify-content: flex-start;
 
+  .photo-container {
+    position: relative;
+    background-position: center;
+    background-size: cover;
 
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(3, 82, 165, .8);
+      opacity: 0;
+      transition: opacity .2s;
 
-  @include breakpoint(small only) {
+      .icon-zoom:before {
+        content: "\69";
+      }
+
+      i {
+        font-size: 50px;
+        font-style: normal;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        color: #FFF;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include breakpoint(medium down) {
     flex-direction: column;
-    padding: 0 8px;
   }
 }
 
 .gallery-column {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
-  &:first-child {
-    @include breakpoint(small only) {
+  @include breakpoint(large) {
+
+    &.left {
+      width: 40%;
+    }
+
+    &.middle {
+      width: 40%;
+    }
+
+    &.right {
+      width: 20%;
+    }
+
+  }
+
+  @include breakpoint(medium down) {
+
+    &.left {
+      flex-direction: row;
+    }
+
+    &.middle {
       flex-direction: column;
     }
+
+    &.right {
+      flex-direction: row;
+    }
+  }
+}
+
+
+.gallery {
+
+  .photo1 {
+    background-image: url("http:placehold.it/508x246/444444");
+    height: 246px;
+  }
+
+  .photo2 {
+    background-image: url("http:placehold.it/508x246/555555");
+    height: 246px;
+  }
+
+  .photo3 {
+    background-image: url("http:placehold.it/508x508/111111");
+    height: 508px;
+  }
+
+  .photo4 {
+    background-image: url("http:placehold.it/248x246/222222");
+    height: 246px;
+  }
+
+  .photo5 {
+    background-image: url("http:placehold.it/248x246/333333");
+    height: 246px;
   }
 
 
-  @include breakpoint(small only) {
-    flex-direction: row;
+  @include breakpoint(large) {
+    .photo1 {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .photo2 {
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+
+    .photo3 {
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+
+    .photo4 {
+      margin-left: 8px;
+      margin-bottom: 8px;
+    }
+
+    .photo5 {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    .photo1 {
+      margin-right: 8px;
+      margin-bottom: 8px;
+      width: 50%;
+    }
+
+    .photo2 {
+      margin-left: 8px;
+      margin-bottom: 8px;
+      width: 50%;
+    }
+
+    .photo3 {
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+
+    .photo4 {
+      margin-right: 8px;
+      margin-top: 8px;
+      width: 50%;
+    }
+
+    .photo5 {
+      margin-left: 8px;
+      margin-top: 8px;
+      width: 50%;
+    }
+
   }
 }

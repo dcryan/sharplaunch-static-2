@@ -1,28 +1,25 @@
 // Foundation Variable Overrides
-$global-width: 1296px;
-// $grid-container: 1100px;
-$button-radius: 5px;
-$button-background: $persian-blue;
-$button-font-size: 16px;
-$button-font-weight: 500;
 $header-font-family: Graphik;
 $body-font-family: Graphik;
 $header-font-weight: 600;
 
-$button-sizes: (tiny: 0.6rem,
-  small: 0.75rem,
-  default: 1rem,
-  large: 1.25rem,
-) !default;
+$button-background: #304FFE;
+$button-font-weight: 500 !default;
+$button-font-weight: bold;
+$button-radius: 5px;
 
-
-$button-padding: 11px 24px !default;
-
-/// include all modules of foundation
 @import 'foundation-sites/scss/foundation';
-@include foundation-everything(true);
+@include foundation-global-styles;
+@include foundation-forms;
+@include foundation-typography;
+@include foundation-xy-grid-classes;
+@include foundation-button;
 
-// Class Overrides
-.button {
-  box-shadow: 0 2px 8px 0 rgba(10, 11, 15, 0.5);
+@include foundation-float-classes;
+@include foundation-visibility-classes;
+
+
+.align-center {
+  -webkit-box-pack: center;
+  justify-content: center;
 }
