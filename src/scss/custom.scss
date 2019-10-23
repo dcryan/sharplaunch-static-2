@@ -387,7 +387,7 @@
 
     img {
       margin: auto;
-      @include max-dimensions(100px, 200px);
+      @include max-dimensions(100px, 100%);
     }
   }
 

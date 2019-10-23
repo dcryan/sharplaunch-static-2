@@ -3341,7 +3341,7 @@ button,
     .tenant-box__logo img {
       margin: auto;
       max-height: 100px;
-      max-width: 200px; }
+      max-width: 100%; }
   .tenant-box__link {
     font-weight: 500;
     font-style: normal;
