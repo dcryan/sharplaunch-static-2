@@ -1,56 +1,38 @@
 .section-title {
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
-  line-height: 40px;
-  letter-spacing: 0px;
-
-  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 
   $separator-length: 30px;
 
-  & .separator {
-    display: inline-block;
-    position: relative;
-  }
+  .section-title__text {}
 
-  & .separator::before {
-    left: 0 - $separator-length - 10px;
-  }
-
-  & .separator::after {
-    right: 0 - $separator-length - 10px;
-  }
-
-  & .separator::before,
-  & .separator::after {
-    content: "";
+  .section-title__separator {
     width: $separator-length;
+    margin: 0 16px;
     height: 2px;
     background-color: $persian-blue;
-    position: absolute;
-    top: 37%;
+
   }
 
-  & .separator--white::before,
-  & .separator--white::after {
-    background-color: $white;
+  &.section-title--white {
+    .section-title__text {
+      color: $white;
+    }
+
+    .section-title__separator {
+      background-color: $white;
+    }
   }
+
 }
 
 .section-sub-title {
   font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: center;
   color: $persian-blue;
-  margin-top: 8px;
-  margin-bottom: 32px;
-
-  &--large-margin-top {
-    margin-top: 32px;
-  }
-
+  text-align: center;
+  margin-top: 32px;
 }

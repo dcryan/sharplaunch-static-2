@@ -37,3 +37,168 @@
   font-weight: 600;
   font-style: normal;
 }
+
+$title4-font-size: 68px;
+$title4-line-height: 76px;
+$title4-leading-space: $title4-line-height - $title4-font-size;
+
+.px-title-4 {
+  font-family: Graphik;
+  font-size: $title4-font-size;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $title4-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$title3-font-size: 42px;
+$title3-line-height: 52px;
+$title3-leading-space: $title3-line-height - $title3-font-size;
+
+.px-title-3 {
+  font-family: Graphik;
+  font-size: $title3-font-size;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $title3-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$title2-font-size: 32px;
+$title2-line-height: 40px;
+$title2-leading-space: $title2-line-height - $title2-font-size;
+
+.px-title-2 {
+  font-family: Graphik;
+  font-size: $title2-font-size;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $title2-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$title1-font-size: 28px;
+$title1-line-height: 36px;
+$title1-leading-space: $title1-line-height - $title1-font-size;
+
+.px-title-1 {
+  font-family: Graphik;
+  font-size: $title1-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $title1-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$sub-head3-font-size: 24px;
+$sub-head3-line-height: 32px;
+$sub-head3-leading-space: $sub-head3-line-height - $sub-head3-font-size;
+
+.px-sub-head-3 {
+  font-family: Graphik;
+  font-size: $sub-head3-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $sub-head3-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$sub-head2-font-size: 20px;
+$sub-head2-line-height: 28px;
+$sub-head2-leading-space: $sub-head2-line-height - $sub-head2-font-size;
+
+.px-sub-head-2 {
+  font-family: Graphik;
+  font-size: $sub-head2-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $sub-head2-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$sub-head1-font-size: 18px;
+$sub-head1-line-height: 24px;
+$sub-head1-leading-space: $sub-head1-line-height - $sub-head1-font-size;
+
+.px-sub-head-1 {
+  font-family: Graphik;
+  font-size: $sub-head1-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $sub-head1-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$body2-font-size: 16px;
+$body2-line-height: 22px;
+$body2-leading-space: $body2-line-height - $body2-font-size;
+
+.px-body-2 {
+  font-family: Graphik;
+  font-size: $body2-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $body2-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$body1-font-size: 14px;
+$body1-line-height: 20px;
+$body1-leading-space: $body1-line-height - $body1-font-size;
+
+.px-body-1 {
+  font-family: Graphik;
+  font-size: $body1-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $body1-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$caption2-font-size: 12px;
+$caption2-line-height: 16px;
+$caption2-leading-space: $caption2-line-height - $caption2-font-size;
+
+.px-caption-2 {
+  font-family: Graphik;
+  font-size: $caption2-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $caption2-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}
+
+$caption1-font-size: 10px;
+$caption1-line-height: 14px;
+$caption1-leading-space: $caption1-line-height - $caption1-font-size;
+
+.px-caption-1 {
+  font-family: Graphik;
+  font-size: $caption1-font-size;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: $caption1-line-height;
+  letter-spacing: normal;
+  color: $almost-black;
+}

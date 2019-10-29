@@ -1,7 +1,12 @@
 .footer {
   background-color: $pebble-black;
   justify-content: center;
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 48px;
+
+  .footer-container {
+    padding: 0 4%;
+  }
 
   .section-title {
     color: white;
@@ -11,20 +16,22 @@
     color: white;
   }
 
-  .contact-form {}
+  .contact-form {
+    margin-top: 8px;
+  }
 
   label {
     color: white;
     text-transform: uppercase;
-    font-size: 12px;
     font-weight: 600;
+
+    margin-top: 24px;
   }
 
   input,
   textarea {
     background-color: black !important;
     border: none !important;
-    font-size: 14px !important;
     color: white !important;
     outline: none !important;
     box-shadow: none !important;
@@ -39,14 +46,22 @@
 
   input {
     height: 32px !important;
+    margin: 0;
+    margin-top: 8px;
   }
 
   textarea {
     height: 121px !important;
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  &__button {
+    margin-top: 24px;
   }
 
   &__address {
-    margin-top: 32px;
+    margin-top: 48px;
     color: white;
     text-align: center;
     font-style: normal;
@@ -54,7 +69,7 @@
 
   &__social-media-icons {
     display: flex;
-    margin-top: 32px;
+    margin-top: 40px;
 
     img {
       margin-right: 16px;
@@ -104,12 +119,35 @@
   }
 
   &.footer--two-column {
+    padding-top: 48px;
 
     .section-title,
     .section-sub-title,
     .footer__address {
       text-align: left;
       ;
+    }
+
+
+    .footer__name,
+    .footer__phone {
+      margin-top: 0;
+    }
+
+    .footer__address {
+      margin-top: 32px;
+    }
+
+    @include breakpoint(large) {
+
+      .footer__column-left {
+        margin-right: 36px;
+      }
+
+      .footer__column-right {
+        margin-left: 36px;
+      }
+
     }
 
   }

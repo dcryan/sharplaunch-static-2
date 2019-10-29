@@ -3,11 +3,15 @@ $header-font-family: Graphik;
 $body-font-family: Graphik;
 $header-font-weight: 600;
 
+$grid-container: 1600px;
+
 $button-background: #304FFE;
 $button-font-weight: 500 !default;
 $button-font-weight: bold;
 $button-radius: 5px;
 $button-margin: 0;
+
+$grid-margin-gutters: 24px;
 
 @import 'foundation-sites/scss/foundation';
 @include foundation-global-styles;

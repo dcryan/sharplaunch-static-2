@@ -1,51 +1,55 @@
 .gallery {
   background-image: url("../img/gallery-background.png");
+  background-size: cover;
   background-position: center;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 32px;
 
-
-  &__carousel {
+  .gallery__carousel {
     position: relative;
+    height: 70vh;
 
-    img {
-      margin: auto;
+    .gallery__carousel-arrow-left {
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      cursor: pointer;
+
+      width: 16px;
+      height: 16px;
+      background: blue;
     }
-  }
 
-  &__carousel-arrow-left {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    cursor: pointer;
+    .gallery__carousel-arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      cursor: pointer;
 
-    width: 16px;
-    height: 16px;
-    background: blue;
-  }
+      width: 16px;
+      height: 16px;
+      background: blue;
+    }
 
-  &__carousel-arrow-right {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    cursor: pointer;
-
-    width: 16px;
-    height: 16px;
-    background: blue;
+    .gallery__carousel-image {
+      width: 100%;
+      height: 100%;
+      background-image: url("https://placeimg.com/1296/600/arch");
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   $carousel-dot-size: 10px;
 
-  &__carousel-dots {
+  .gallery__carousel-dots {
+    position: relative;
     display: flex;
     justify-content: center;
-
-    margin-top: -32px - $carousel-dot-size;
+    bottom: 32px + $carousel-dot-size;
   }
 
-  &__carousel-dot {
+  .gallery__carousel-dot {
     width: $carousel-dot-size;
     height: $carousel-dot-size;
     border-radius: $carousel-dot-size;
@@ -59,16 +63,22 @@
     }
   }
 
-  &__carousel-thumbnails {
+  .gallery__carousel-thumbnails {
     display: flex;
     justify-content: center;
     padding: 16px;
+
   }
 
-  &__carousel-thumbnail {
+  .gallery__carousel-thumbnail {
     margin: 0 4px;
     border: 1px solid transparent;
     cursor: pointer;
+    height: 50px;
+    width: 70px;
+    background-image: url("https://placeimg.com/1296/600/arch");
+    background-size: cover;
+    background-position: center;
 
     &--selected {
       border-color: $persian-blue;
@@ -76,9 +86,10 @@
   }
 }
 
-.gallery-grid {
+.gallery__grid {
   display: flex;
   justify-content: flex-start;
+  height: 70vh;
 
   .photo-container {
     position: relative;
@@ -128,10 +139,11 @@
   }
 }
 
-.gallery-column {
+.gallery__column {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 
   @include breakpoint(large) {
 
@@ -166,31 +178,37 @@
 }
 
 
+
 .gallery {
 
   .photo1 {
-    background-image: url("http:placehold.it/508x246/444444");
-    height: 246px;
+    background-image: url("https://placeimg.com/500/600/arch");
+    background-position: center;
+    background-size: cover;
   }
 
   .photo2 {
-    background-image: url("http:placehold.it/508x246/555555");
-    height: 246px;
+    background-image: url("https://placeimg.com/600/600/arch");
+    background-position: center;
+    background-size: cover;
   }
 
   .photo3 {
-    background-image: url("http:placehold.it/508x508/111111");
-    height: 508px;
+    background-image: url("https://placeimg.com/800/700/arch");
+    background-position: center;
+    background-size: cover;
   }
 
   .photo4 {
-    background-image: url("http:placehold.it/248x246/222222");
-    height: 246px;
+    background-image: url("https://placeimg.com/700/500/arch");
+    background-position: center;
+    background-size: cover;
   }
 
   .photo5 {
-    background-image: url("http:placehold.it/248x246/333333");
-    height: 246px;
+    background-image: url("https://placeimg.com/100/200/arch");
+    background-position: center;
+    background-size: cover;
   }
 
 
@@ -198,26 +216,31 @@
     .photo1 {
       margin-right: 8px;
       margin-bottom: 8px;
+      height: 50%;
     }
 
     .photo2 {
       margin-right: 8px;
       margin-top: 8px;
+      height: 50%;
     }
 
     .photo3 {
       margin-right: 8px;
       margin-left: 8px;
+      height: 100%;
     }
 
     .photo4 {
       margin-left: 8px;
       margin-bottom: 8px;
+      height: 50%;
     }
 
     .photo5 {
       margin-left: 8px;
       margin-top: 8px;
+      height: 50%;
     }
   }
 
@@ -237,6 +260,8 @@
     .photo3 {
       margin-bottom: 8px;
       margin-top: 8px;
+      width: 100%;
+      height: 100%;
     }
 
     .photo4 {
