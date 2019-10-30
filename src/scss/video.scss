@@ -1,0 +1,29 @@
+.video {
+  background-image: url('https://placeimg.com/1300/700/arch');
+  background-size: cover;
+  background-position: center;
+
+  height: 70vh;
+  color: $white;
+  padding-bottom: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+
+
+  .video__title-bar {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    background-color: rgba($persian-blue, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(medium down) {
+      height: 80px;
+    }
+
+  }
+}

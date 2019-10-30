@@ -4,6 +4,7 @@
   box-shadow: 0 8px 24px 0 rgba($almost-black, 0.1);
   background-color: $white;
   position: relative;
+  z-index: 2;
 
   &__container {
     height: 100%;
@@ -33,14 +34,8 @@
     justify-content: space-between;
   }
 
-  &__nav-button {
-    font-size: 16px;
+  &__nav-link {
     font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: 0.17px;
-    list-style: none;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -59,15 +54,34 @@
         color: rgba($metal-black, .7);
       }
     }
+  }
 
-    button {
+  &__nav-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 16px;
+
+    button: {
       font-size: 1em;
     }
   }
 
-  &__menu-button {}
+  &__menu-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
 
   .hamburger {
+    outline: none;
     cursor: pointer;
 
     div {
@@ -76,15 +90,12 @@
       background: $almost-black;
       margin: 0 0 3px;
       border-radius: 3px;
+      transition: .2s;
+      transform-origin: center center;
     }
 
-    &:hover {
-      opacity: 1;
-      transition: .2s;
-    }
 
     &.active {
-      margin-top: 3px;
 
       .hamburger-bun {
         margin: 0;
@@ -95,13 +106,10 @@
 
         &:first-child {
           transform: rotate(45deg);
-          transition: .2s;
-          margin-top: 6px;
         }
 
         &:last-child {
           transform: rotate(-45deg);
-          transition: .2s;
           margin-top: -6px;
         }
       }

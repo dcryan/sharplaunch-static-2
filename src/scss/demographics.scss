@@ -1,0 +1,70 @@
+.demographics {
+  background-color: #f0f0f0;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .demographics__text {
+    margin-top: 32px;
+  }
+
+  .demographics__table-container {
+    margin-top: 32px;
+  }
+
+  .demographics__table {
+    width: 100%;
+    height: 100%;
+
+    .demographics__table-row {
+      min-height: 54px;
+      background-color: $white !important;
+      border-bottom: 1px solid rgba($almost-black, 0.2) !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+
+      @include breakpoint(medium down) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .demographics__table-header .demographics__table-row {
+      height: 30px;
+    }
+
+    .demographics__table-header {
+      color: $fosill-grey;
+      font-size: 12px;
+    }
+
+    .demographics__table-cell-container {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include breakpoint(medium down) {
+        width: 100%;
+      }
+    }
+
+    .demographics__table-cell-label {
+      text-align: left;
+      width: 25%;
+
+      @include breakpoint(medium down) {
+        width: 100%;
+      }
+    }
+
+    .demographics__table-cell {
+      text-align: left;
+      width: 33.3%;
+    }
+
+
+  }
+
+}

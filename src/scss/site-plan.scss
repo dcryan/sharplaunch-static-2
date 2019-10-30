@@ -1,0 +1,112 @@
+.site-plan {
+  background-color: #f0f0f0;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .site-plan__text {
+    margin-top: 32px;
+  }
+
+  .site-plan__content {
+    margin-top: 32px;
+  }
+
+  &__map-container {
+    text-align: center;
+
+    max-height: 500px;
+    margin: auto;
+
+    img {
+      margin: auto;
+      max-height: 500px;
+    }
+  }
+
+  &__list {
+    margin-top: 32px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    min-height: 88px;
+    align-items: center;
+
+    @include breakpoint(medium down) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px 0;
+    }
+  }
+
+  // &__details {}
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &__info {
+    margin-top: 8px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+
+    @include breakpoint(medium down) {
+      margin-top: 24px;
+    }
+  }
+
+  &__floor-plan {
+    margin: 0 8px;
+    cursor: pointer;
+    transition: color .2s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: rgba($almost-black, 0.8)
+    }
+
+    .site-plan__download-button-image {
+      padding-bottom: 4px;
+    }
+
+    .site-plan__download-button-text {
+      margin-left: 8px;
+    }
+  }
+
+  &__virtual-tour {
+    margin-right: 8px;
+    margin-left: 24px;
+    cursor: pointer;
+    transition: color .2s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: rgba($almost-black, 0.8)
+    }
+
+    .site-plan__virtual-tour-image {
+      padding-bottom: 4px;
+    }
+
+    .site-plan__virtual-tour-text {
+      margin-left: 8px;
+    }
+  }
+
+  .site-plan__line {
+    background-color: rgba($almost-black, 0.2);
+    height: 1px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+}

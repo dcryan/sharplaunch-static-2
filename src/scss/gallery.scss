@@ -4,10 +4,13 @@
   background-position: center;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 64px;
 
   .gallery__carousel {
     position: relative;
     height: 70vh;
+
+    margin-top: 64px;
 
     .gallery__carousel-arrow-left {
       position: absolute;
@@ -90,6 +93,8 @@
   display: flex;
   justify-content: flex-start;
   height: 70vh;
+
+  margin-top: 64px;
 
   .photo-container {
     position: relative;

@@ -1,0 +1,46 @@
+.tenants {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #f0f0f0;
+
+  .tenants__text {
+    margin-top: 32px;
+  }
+}
+
+.tenant-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: unset;
+  padding: 16px 24px;
+  transition: box-shadow .2s;
+  cursor: pointer;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 32px;
+
+  &:hover {
+    box-shadow: 0 8px 24px 0 rgba($almost-black, 0.2);
+  }
+
+  &__logo {
+    flex-grow: 1;
+    display: flex;
+
+    img {
+      margin: auto;
+      @include max-dimensions(100px, 100%);
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+
+    margin-top: 16px;
+  }
+}

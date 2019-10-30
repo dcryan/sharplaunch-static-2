@@ -1,0 +1,39 @@
+.building {
+  background-image: url("../img/background1.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .building__overview-title {
+    margin-top: 16px;
+  }
+
+  .building__overview-text {
+    margin-top: 32px;
+  }
+
+  .building__property-features-title {
+    margin-top: 32px;
+  }
+
+  .building__property-features-boxes {
+    margin-top: 32px;
+  }
+
+  .building__certifications-title {
+    margin-top: 32px;
+  }
+
+  .building__certifications-text {
+    margin-top: 32px;
+  }
+
+  .building__address-title {
+    margin-top: 32px;
+  }
+
+  .building__address-text {
+    margin-top: 32px;
+  }
+}

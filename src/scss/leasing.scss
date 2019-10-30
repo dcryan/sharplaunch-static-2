@@ -1,0 +1,82 @@
+.leasing {
+  background-image: url("../img/leasing-background.png");
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .leasing__brokerage-team-title {
+    margin-top: 16px;
+  }
+
+  .leasing__brokerage-team-text {
+    margin-top: 32px;
+  }
+
+  .leasing__brokerage-team-members {
+    margin-top: 48px - 8px;
+  }
+
+  .team-member {
+    text-align: center;
+    position: relative;
+    padding: 24px;
+    margin: 8px 0;
+
+    transition: box-shadow .2s;
+
+    &:hover {
+      box-shadow: 0 8px 24px rgba($almost-black, 0.2);
+    }
+
+    &__avatar {
+      background-image: url('https://placeimg.com/200/200/people');
+      height: 150px;
+      width: 150px;
+      margin: auto;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      @include max-dimensions(150px, 150px);
+    }
+
+    &__line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 10px;
+      background-color: $persian-blue;
+    }
+
+    &__name {
+      font-weight: 500;
+      margin-top: 24px;
+    }
+
+    .team-member__identities {
+      div:first-child {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .leasing-member__container {
+    width: 336px;
+    height: 164px;
+    box-shadow: 0 16px 32px 0 rgba($almost-black, 0.1);
+    background-color: $white;
+  }
+
+  &.leasing--no-avatars {
+    .team-member {
+      text-align: left;
+      padding-left: 42px;
+
+      &__name {
+        margin-top: 0;
+      }
+    }
+  }
+}

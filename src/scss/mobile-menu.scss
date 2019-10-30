@@ -1,0 +1,44 @@
+.mobile-menu {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh + 88px);
+  z-index: 1;
+  top: 0;
+  // Make room for the Nav Bar
+  padding-top: 88px;
+
+  padding-bottom: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  // Base State
+  left: 20%;
+  opacity: 0;
+  transition: opacity .2s ease-in;
+  transition: left .2s ease-in;
+  background-color: $white;
+
+  &.active {
+    opacity: 1;
+    left: 0;
+
+    overflow: scroll;
+  }
+
+  .mobile-menu__line {
+    margin-top: 128px;
+    width: 50px;
+    height: 1px;
+    background-color: $persian-blue;
+  }
+
+  .header__nav-link {
+    margin-top: 16px;
+    padding: 0;
+  }
+
+  .header__nav-button {
+    margin-top: 48px;
+    padding: 0;
+  }
+}

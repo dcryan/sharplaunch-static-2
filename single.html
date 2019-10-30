@@ -18,30 +18,51 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a hrpef="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- 01. White - 100% - Text Logo -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__line"></div>
+    <div class="mobile-menu__content">
+      <div class="header__nav-link px-sub-head-2"><a href="#building-overview">Building Overview</a></div>
+      <div class="header__nav-link px-sub-head-2"><a href="#video">Video</a></div>
+      <div class="header__nav-link px-sub-head-2"><a href="#availability">Availability</a></div>
+      <div class="header__nav-link px-sub-head-2"><a href="#location">Location</a></div>
+      <div class="header__nav-link px-sub-head-2"><a href="#gallery">Gallery</a></div>
+      <div class="header__nav-link px-sub-head-2"><a href="#advisory-team">Advisory Team</a></div>
+      <div class="header__nav-link px-sub-head-2"><a href="#contact">Contact</a></div>
+      <div class="header__nav-button">
+        <div>
+          <button class="button">Client Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03. White - 100% - Card Image Logo -->
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <img src="https://via.placeholder.com/208x32" alt="logo">
+        <div class="header__logo-card-container">
+          <!-- if image is larger than header height, it's a card -->
+          <img src="src/img/Colliers.png" alt="logo">
+        </div>
       </div>
       <nav class="header__nav-group show-for-large">
-        <div class="header__nav-button"><a href="#building-overview">Building Overview</a></div>
-        <div class="header__nav-button"><a href="#video">Video</a></div>
-        <div class="header__nav-button"><a href="#availability">Availability</a></div>
-        <div class="header__nav-button"><a href="#location">Location</a></div>
-        <div class="header__nav-button"><a href="#gallery">Gallery</a></div>
-        <div class="header__nav-button"><a href="#advisory-team">Advisory Team</a></div>
-        <div class="header__nav-button"><a href="#contact">Contact</a></div>
+        <div class="header__nav-link px-body-2"><a href="#building-overview">Building Overview</a></div>
+        <div class="header__nav-link px-body-2"><a href="#video">Video</a></div>
+        <div class="header__nav-link px-body-2"><a href="#availability">Availability</a></div>
+        <div class="header__nav-link px-body-2"><a href="#location">Location</a></div>
+        <div class="header__nav-link px-body-2"><a href="#gallery">Gallery</a></div>
+        <div class="header__nav-link px-body-2"><a href="#advisory-team">Advisory Team</a></div>
+        <div class="header__nav-link px-body-2"><a href="#contact">Contact</a></div>
         <div class="header__nav-button"><button class="button">Client Login</button></div>
       </nav>
 
-      <button class="header__menu-button hide-for-large">
-        <a href="#" class="hamburger hide-for-large">
+      <div class="header__menu-button hide-for-large">
+        <button class="hamburger">
           <div class="hamburger-bun"></div>
           <div class="hamburger-patty"></div>
           <div class="hamburger-bun"></div>
-        </a>
-      </button>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -50,12 +71,13 @@
     <div class="hero">
       <div class="hero__background">
         <div data-aos="fade-up" class="hero__content">
-          <h1 class="hero__title">100 North Avenu Blv</h1>
-          <h2 class="hero__sub-title">BOSTON, MA</h2>
+          <div class="hero__title px-title-4">100 North Avenu Blv</div>
+          <div class="hero__sub-title px-title-2">BOSTON, MA</div>
           <a class="hero__button"><button class="button large">My CTA goes here</button></a>
         </div>
       </div>
     </div>
+
 
     <section id="building">
       <div class="building">
@@ -133,6 +155,96 @@
       </div>
     </section>
 
+    <section id="building">
+      <div class="building">
+        <div class="grid-x align-center grid-container">
+          <div class="medium-9">
+            <div data-aos="fade-up" class="section-title">
+              <span class="section-title__separator"></span>
+              <div class="section-title__text px-title-2" data-magellan-destination="building">Building Overview</div>
+              <span class="section-title__separator"></span>
+            </div>
+
+            <div class="text-center">
+              <div class="building__overview-title section-sub-title px-sub-head-3" data-aos="fade-up">Overview</div>
+              <div class="building__overview-text px-body-2" data-aos="fade-up">
+                Wasserman Capital Partners, as exclusive agent, is pleased to offer for sale the fee simple interest in
+                Intellicenter (the “Property”), a three-story, 250,000 square foot, class A Silver LEED Certified
+                building
+                located in Atlanta's business district. The property features a modern design, which utilizes the latest
+                building technologies and offers reduced operating costs and cleaner air. IntelliCenter offers
+                state-of-the-art Class A office space.
+                <br />
+                <br />
+                IntelliCenter provides easy access to a rapidly growing, well-educated workforce entry level to senior
+                executive housing, as well as an abundance of retail, personal services, restaurants and overnight or
+                extended stay hotels.
+                <br />
+                <br />
+                Along with a LEED Silver certification, the IntelliCenter Atlanta boasts an ENERGY STAR performance
+                rating
+                of 92. It currently ranks in the top 10 percent of buildings nationally in regards to energy efficiency.
+              </div>
+
+              <div class="building__property-features-title section-sub-title px-sub-head-3" data-aos="fade-up">
+                Property Features
+              </div>
+
+              <div class="building__property-features-boxes grid-x grid-padding-x" data-equalizer>
+                <div data-aos="fade-up" class="medium-6 cell">
+                  <div class="property-features-section box white text-left" data-equalizer-watch>
+                    <div class="px-body-2">
+                      Commercial Core - situated in the midst of a fast-growing hub of major corporations
+                    </div>
+                    <div class="px-body-2">
+                      Corner Retail Opportunity - available 4,000 SF prime corner retail space will command market rents
+                      exceeding $400SF
+                    </div>
+                    <div class="px-body-2">
+                      Mark-to-Market Upside - nearly 50% of the Property’s office space expires over the next five
+                      years
+                    </div>
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="medium-6 cell">
+                  <div class="property-features-section box white text-left" data-equalizer-watch>
+                    <div class="px-body-2">
+                      Commercial Core - situated in the midst of a fast-growing hub of major corporations
+                    </div>
+                    <div class="px-body-2">
+                      Corner Retail Opportunity - available 4,000 SF prime corner retail space will command market
+                      rents
+                      exceeding $400SF
+                    </div>
+                    <div class="px-body-2">
+                      Mark-to-Market Upside - nearly 50% of the Property’s office space expires over the next five
+                      years
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="building__certifications-title section-sub-title px-sub-head-3" data-aos="fade-up">
+                Certifications
+              </div>
+              <div class="building__certifications-text px-body-2" data-aos="fade-up">
+                Aimed for LEED Gold, BOMA BEST Gold, LEED Dynamic Certification, Green Lease options
+              </div>
+
+
+              <div class="building__address-title section-sub-title px-sub-head-3" data-aos="fade-up">
+                Address
+              </div>
+              <div class="building__address-text px-body-2" data-aos="fade-up">3369 Lenox Rd NE Lawrenceville, GA 30326
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="video">
       <div class="video">
         <div class="video__title-bar">
@@ -181,6 +293,61 @@
         </div>
 
       </div>
+    </section>
+
+    <section id="gallery">
+      <div class="gallery">
+
+        <a name="gallery"></a>
+        <div data-aos="fade-up" class="section-title">
+          <span class="section-title__separator"></span>
+          <div class="section-title__text px-title-2" data-magellan-destination="Gallery">Gallery</div>
+          <span class="section-title__separator"></span>
+        </div>
+
+        <div class="gallery__carousel">
+          <div class="gallery__carousel-arrow-left"></div>
+          <div class="gallery__carousel-arrow-right"></div>
+          <div class="gallery__carousel-image"></div>
+
+          <div class="gallery__carousel-dots">
+            <div class="gallery__carousel-dot gallery__carousel-dot--selected"></div>
+            <div class="gallery__carousel-dot"></div>
+            <div class="gallery__carousel-dot"></div>
+            <div class="gallery__carousel-dot"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="gallery">
+
+        <div>
+          <a name="gallery"></a>
+          <div data-aos="fade-up" class="section-title">
+            <span class="section-title__separator"></span>
+            <div class="section-title__text px-title-2" data-magellan-destination="Gallery">Gallery</div>
+            <span class="section-title__separator"></span>
+          </div>
+
+          <div class="gallery__carousel">
+            <div class="gallery__carousel-arrow-left"></div>
+            <div class="gallery__carousel-arrow-right"></div>
+            <div class="gallery__carousel-image"></div>
+          </div>
+
+          <div class="gallery__carousel-thumbnails">
+            <div class="gallery__carousel-thumbnail gallery__carousel-thumbnail--selected"
+              src="http://placehold.it/70x50" alt="thumbnail image"></div>
+            <div class="gallery__carousel-thumbnail"></div>
+            <div class="gallery__carousel-thumbnail"></div>
+            <div class="gallery__carousel-thumbnail"></div>
+            <div class="gallery__carousel-thumbnail"></div>
+
+          </div>
+        </div>
     </section>
 
     <section id="location">
@@ -275,6 +442,84 @@
       </div>
     </section>
 
+    <section id="leasing">
+      <div class="leasing leasing--no-avatars">
+        <a name="leasing"></a>
+        <div data-aos="fade-up" class="section-title">
+          <span class="section-title__separator"></span>
+          <div class="section-title__text px-title-2" data-magellan-destination="leasing">Leasing</div>
+          <span class="section-title__separator"></span>
+        </div>
+
+        <div class="grid-x align-center grid-container">
+          <div class="medium-9">
+            <div class="leasing__brokerage-team-title section-sub-title px-sub-head-3 text-center" data-aos="fade-up">
+              Brokerage Team
+            </div>
+            <div class="leasing__brokerage-team-text px-body-2 text-center" data-aos="fade-up">
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit
+              tempus
+              porttitor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis
+              dapibus
+              posuere velit
+              aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.
+            </div>
+
+            <div class="leasing__brokerage-team-members grid-x grid-padding-x">
+              <div class="large-4 medium-6 cell">
+                <div data-aos="fade-up">
+                  <div class="team-member box">
+                    <div class="team-member__line"></div>
+                    <div class="team-member__name px-sub-head-3">Angela Ellis</div>
+                    <div class="team-member__identities">
+                      <div class="team-member__job px-body-1">Professor</div>
+                      <div class="team-member__company px-body-1">Bubbletube</div>
+                      <div class="team-member__phone px-body-1">(704) 335-4441</div>
+                      <div class="team-member__email px-body-1">
+                        <a href="#">David.Dorsch@dtz.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="large-4 medium-6 cell">
+                <div data-aos="fade-up" data-aos-delay="100">
+                  <div class="team-member box">
+                    <div class="team-member__line"></div>
+                    <div class="team-member__name px-sub-head-3">Angela Ellis</div>
+                    <div class="team-member__identities">
+                      <div class="team-member__job px-body-1">Professor</div>
+                      <div class="team-member__company px-body-1">Bubbletube</div>
+                      <div class="team-member__phone px-body-1">(704) 335-4441</div>
+                      <div class="team-member__email px-body-1">
+                        <a href="#">David.Dorsch@dtz.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="large-4 medium-6 cell">
+                <div data-aos="fade-up" data-aos-delay="200">
+                  <div class="team-member box">
+                    <div class="team-member__line"></div>
+                    <div class="team-member__name px-sub-head-3">Angela Ellis</div>
+                    <div class="team-member__identities">
+                      <div class="team-member__job px-body-1">Professor</div>
+                      <div class="team-member__company px-body-1">Bubbletube</div>
+                      <div class="team-member__phone px-body-1">(704) 335-4441</div>
+                      <div class="team-member__email px-body-1">
+                        <a href="#">David.Dorsch@dtz.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <section id="availabilities">
       <div class="availabilities">
@@ -312,7 +557,7 @@
                     <button class="availability-card__download-button">
                       <img class="availability-card__download-button-image" src="src/img/download-icon-white.svg"
                         alt="download">
-                      <span class="availability-card__download-button-text">
+                      <span class="availability-card__download-button-text px-body-2">
                         Floor Plan
                       </span>
                     </button>
@@ -321,7 +566,7 @@
                   <div class="availability-card__virtual-tour">
                     <img class="availability-card__virtual-tour-image" src="src/img/virtual-tour-icon.svg"
                       alt="virtual tour">
-                    <span class="availability-card__virtual-tour-text">
+                    <span class="availability-card__virtual-tour-text px-body-2">
                       Virtual Tour
                     </span>
                   </div>
@@ -349,7 +594,7 @@
                     <button class="availability-card__download-button">
                       <img class="availability-card__download-button-image" src="src/img/download-icon-white.svg"
                         alt="download">
-                      <span class="availability-card__download-button-text">
+                      <span class="availability-card__download-button-text px-body-2">
                         Floor Plan
                       </span>
                     </button>
@@ -358,7 +603,7 @@
                   <div class="availability-card__virtual-tour">
                     <img class="availability-card__virtual-tour-image" src="src/img/virtual-tour-icon.svg"
                       alt="virtual tour">
-                    <span class="availability-card__virtual-tour-text">
+                    <span class="availability-card__virtual-tour-text px-body-2">
                       Virtual Tour
                     </span>
                   </div>
@@ -386,7 +631,7 @@
                     <button class="availability-card__download-button">
                       <img class="availability-card__download-button-image" src="src/img/download-icon-white.svg"
                         alt="download">
-                      <span class="availability-card__download-button-text">
+                      <span class="availability-card__download-button-text px-body-2">
                         Floor Plan
                       </span>
                     </button>
@@ -414,7 +659,7 @@
                     <button class="availability-card__download-button">
                       <img class="availability-card__download-button-image" src="src/img/download-icon-white.svg"
                         alt="download">
-                      <span class="availability-card__download-button-text">
+                      <span class="availability-card__download-button-text px-body-2">
                         Floor Plan
                       </span>
                     </button>
@@ -654,8 +899,8 @@
               <div class="large-3 medium-4 small-6 cell" data-aos="fade-up" data-aos-delay="300">
                 <div class="tenant-box box">
                   <div class="tenant-box__logo">
-                    <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.png"
-                      alt="tenant" />
+                    <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.png" alt="
+                      tenant" />
                   </div>
                   <div class="tenant-box__link">Visit Site</div>
                 </div>
@@ -787,13 +1032,13 @@
                     <div class="site-plan__floor-plan">
                       <img class="site-plan__download-button-image" src="src/img/download-icon-black.svg"
                         alt="download">
-                      <span class="site-plan__download-button-text">
+                      <span class="site-plan__download-button-text px-body-2">
                         Floor Plan
                       </span>
                     </div>
                     <div class="site-plan__virtual-tour">
                       <img class="site-plan__virtual-tour-image" src="src/img/virtual-tour-icon.svg" alt="download">
-                      <span class="site-plan__virtual-tour-text">
+                      <span class="site-plan__virtual-tour-text px-body-2">
                         Virtual Tour
                       </span>
                     </div>
@@ -813,13 +1058,13 @@
                     <div class="site-plan__floor-plan">
                       <img class="site-plan__download-button-image" src="src/img/download-icon-black.svg"
                         alt="download">
-                      <span class="site-plan__download-button-text">
+                      <span class="site-plan__download-button-text px-body-2">
                         Floor Plan
                       </span>
                     </div>
                     <div class="site-plan__virtual-tour">
                       <img class="site-plan__virtual-tour-image" src="src/img/virtual-tour-icon.svg" alt="download">
-                      <span class="site-plan__virtual-tour-text">
+                      <span class="site-plan__virtual-tour-text px-body-2">
                         Virtual Tour
                       </span>
                     </div>
@@ -908,6 +1153,234 @@
     </div>
   </footer>
 
+
+  <!-- White Single Column -->
+  <footer class="footer footer--white">
+    <div class="footer-container">
+
+      <a name="contact"></a>
+      <div data-aos="fade-up" class="section-title">
+        <span class="section-title__separator"></span>
+        <div class="section-title__text px-title-2" data-magellan-destination="contact">SharpLaunch</div>
+        <span class="section-title__separator"></span>
+      </div>
+
+      <div class="grid-x grid-container align-center">
+        <div class="medium-9 cell">
+
+          <div data-aos="fade-up" class="section-sub-title px-sub-head-3">Please contact us for more information</div>
+
+          <form class="contact-form" data-aos="fade-up">
+            <div class="grid-x grid-margin-x align-center">
+
+              <div class="large-4 cell">
+                <label for="name" class="footer__name px-caption-2">
+                  your name
+                  <input class="px-body-1" type="text" name="name" placeholder="placeholder" />
+                </label>
+              </div>
+
+              <div class="large-4 cell">
+                <label for="phone" class="footer__phone px-caption-2">
+                  phone
+                  <input class="px-body-1" type="text" name="phone" placeholder="placeholder" />
+                </label>
+              </div>
+
+              <div class="large-4 cell">
+                <label for="email" class="footer__email px-caption-2">
+                  email
+                  <input class="px-body-1" type="text" name="email" placeholder="placeholder" />
+                </label>
+              </div>
+
+              <div class="small-12">
+                <label for="message" class="footer__message px-caption-2">
+                  message
+                  <textarea class="px-body-1" name="message" cols="30" rows="10" placeholder="placeholder"></textarea>
+                </label>
+              </div>
+
+              <div class="small-12 grid-x align-center">
+                <button class="footer__button button" type="submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <address class="footer__address" data-aos="fade-up">
+            Wasserman<br />
+            18441 Bellavista Drive, Los Angeles, CA 92612<br />
+            Phone: (919) 402-9888<br />
+            Fax: (919) 402-9888
+          </address>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Black Two Column -->
+  <footer class="footer footer--two-column">
+
+    <div class="footer-container">
+      <div class="grid-x grid-container align-center">
+        <div class="medium-9 cell">
+          <div class="footer__column-grid grid-x grid-margin-x">
+
+            <div class="footer__column-left large-auto cell" data-aos="fade-up">
+              <form class="contact-form">
+                <div class="grid-x align-center">
+                  <div class="small-12">
+                    <div class="grid-x grid-margin-x">
+                      <div class="small-6 cell">
+                        <label for="name" class="footer__name">
+                          your name
+                          <input type="text" name="name" placeholder="placeholder" />
+                        </label>
+                      </div>
+                      <div class="small-6 cell">
+                        <label for="phone" class="footer__phone">
+                          phone
+                          <input type="text" name="phone" placeholder="placeholder" />
+                        </label>
+                      </div>
+                    </div>
+                    <label for="email" class="footer__email">
+                      email
+                      <input type="text" name="email" placeholder="placeholder" />
+                    </label>
+
+                    <label for="message" class="footer__message">
+                      message
+                      <textarea name="message" cols="30" rows="10" placeholder="placeholder"></textarea>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="footer__button button" type="submit">
+                  Submit
+                </button>
+
+              </form>
+            </div>
+
+            <div class="footer__column-right large-auto cell" data-aos="fade-up" data-aos-delay="100">
+
+              <a name="contact"></a>
+              <div data-aos="fade-up" class="section-title section-title--white">
+                <span class="section-title__separator"></span>
+                <div class="section-title__text px-title-2" data-magellan-destination="contact">SharpLaunch</div>
+                <span class="section-title__separator"></span>
+              </div>
+
+              <div data-aos="fade-up" class="section-sub-title px-sub-head-3">
+                Please contact us for more information
+              </div>
+
+              <address class="footer__address">
+                Wasserman<br />
+                18441 Bellavista Drive, Los Angeles, CA 92612<br />
+                Phone: (919) 402-9888<br />
+                Fax: (919) 402-9888
+              </address>
+
+              <div class="footer__social-media-icons">
+                <img src="src/img/facebook-white.svg" alt="facebook">
+                <img src="src/img/twitter-white.svg" alt="twitter">
+                <img src="src/img/linkedin-white.svg" alt="linkedin">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- White Two Column -->
+  <footer class="footer footer--two-column footer--white">
+
+    <div class="footer-container">
+      <div class="grid-x grid-container align-center">
+        <div class="medium-9 cell">
+          <div class="footer__column-grid grid-x grid-margin-x">
+
+            <div class="footer__column-left large-auto cell" data-aos="fade-up">
+              <form class="contact-form">
+                <div class="grid-x align-center">
+                  <div class="small-12">
+                    <div class="grid-x grid-margin-x">
+                      <div class="small-6 cell">
+                        <label for="name" class="footer__name">
+                          your name
+                          <input type="text" name="name" placeholder="placeholder" />
+                        </label>
+                      </div>
+                      <div class="small-6 cell">
+                        <label for="phone" class="footer__phone">
+                          phone
+                          <input type="text" name="phone" placeholder="placeholder" />
+                        </label>
+                      </div>
+                    </div>
+                    <label for="email" class="footer__email">
+                      email
+                      <input type="text" name="email" placeholder="placeholder" />
+                    </label>
+
+                    <label for="message" class="footer__message">
+                      message
+                      <textarea name="message" cols="30" rows="10" placeholder="placeholder"></textarea>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="footer__button button" type="submit">
+                  Submit
+                </button>
+
+              </form>
+            </div>
+
+            <div class="footer__column-right large-auto cell" data-aos="fade-up" data-aos-delay="100">
+
+              <a name="contact"></a>
+              <div data-aos="fade-up" class="section-title">
+                <span class="section-title__separator"></span>
+                <div class="section-title__text px-title-2" data-magellan-destination="contact">SharpLaunch</div>
+                <span class="section-title__separator"></span>
+              </div>
+
+              <div data-aos="fade-up" class="section-sub-title px-sub-head-3">
+                Please contact us for more information
+              </div>
+
+              <address class="footer__address">
+                Wasserman<br />
+                18441 Bellavista Drive, Los Angeles, CA 92612<br />
+                Phone: (919) 402-9888<br />
+                Fax: (919) 402-9888
+              </address>
+
+              <div class="footer__social-media-icons">
+                <img src="src/img/facebook-black.svg" alt="facebook">
+                <img src="src/img/twitter-black.svg" alt="twitter">
+                <img src="src/img/linkedin-black.svg" alt="linkedin">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script src="dist/bundle.js"></script>
 </body>
 

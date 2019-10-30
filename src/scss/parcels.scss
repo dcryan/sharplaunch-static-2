@@ -1,0 +1,96 @@
+.parcels {
+  background-color: #f0f0f0;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  .parcels__text {
+    margin-top: 32px;
+  }
+
+  .parcel-box {
+
+    &__container {
+      display: flex;
+      background: $white;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+      border-radius: 5px;
+      margin-top: 32px;
+
+      @include breakpoint(medium down) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__content {
+      padding: 48px;
+      width: 50%;
+
+      @include breakpoint(medium down) {
+        width: inherit;
+        padding: 24px;
+      }
+    }
+
+    &__name {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__attributes {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+
+      @include breakpoint(medium down) {
+        justify-content: space-between;
+      }
+    }
+
+    &__attribute {
+      height: 72px;
+
+      @include breakpoint(large) {
+        width: 20%;
+      }
+
+      @include breakpoint(medium) {
+        width: 33.3%;
+      }
+
+      @include breakpoint(small) {
+        width: 50%;
+      }
+
+
+      &-name {
+        font-size: 12px;
+        font-weight: 600;
+        color: $persian-blue;
+      }
+
+      &-value {
+        color: $metal-black;
+      }
+    }
+
+    &__map {
+      background-image: url('https://www.cpvmfg.com/app/uploads/2018/04/map-placeholder.jpg');
+      background-position: center;
+      background-size: cover;
+      border-radius: 0 5px 5px 0;
+      width: 50%;
+
+      @include breakpoint(large) {
+        min-height: 500px;
+      }
+
+      @include breakpoint(medium down) {
+        border-radius: 5px 5px 0 0;
+        width: inherit;
+        min-height: 300px;
+      }
+    }
+  }
+}
