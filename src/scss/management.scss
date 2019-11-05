@@ -44,16 +44,13 @@
     display: inline-block;
   }
 
-  h6 {
-    color: $persian-blue;
-  }
-
   &__contact-info {
     background-color: $pebble-black;
     color: $white;
 
-    h6 {
+    .management__contact-info-title {
       color: $white;
+      font-weight: 600;
     }
 
     .contact-info-table {
