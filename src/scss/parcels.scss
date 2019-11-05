@@ -1,10 +1,14 @@
 .parcels {
   background-color: #f0f0f0;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  @include padding-top(64px, 48px);
+  @include padding-bottom(64px, 48px);
+
+  .parcels__sub-title {
+    margin-top: 16px;
+  }
 
   .parcels__text {
-    margin-top: 32px;
+    @include margin-top(32px, 24px);
   }
 
   .parcel-box {
@@ -16,7 +20,7 @@
       flex-direction: row;
       padding: 0;
       border-radius: 5px;
-      margin-top: 32px;
+      @include margin-top(58px, 32px);
 
       @include breakpoint(medium down) {
         flex-direction: column-reverse;

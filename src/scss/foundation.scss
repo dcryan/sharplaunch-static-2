@@ -16,15 +16,8 @@ $grid-margin-gutters: 24px;
 @import 'foundation-sites/scss/foundation';
 @include foundation-global-styles;
 @include foundation-forms;
-@include foundation-typography;
 @include foundation-xy-grid-classes;
 @include foundation-button;
 
 @include foundation-float-classes;
 @include foundation-visibility-classes;
-
-
-.align-center {
-  -webkit-box-pack: center;
-  justify-content: center;
-}

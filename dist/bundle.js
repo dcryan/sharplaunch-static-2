@@ -414,17 +414,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _mobile_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mobile-nav */ "./src/js/mobile-nav.js");
 /* harmony import */ var _mobile_nav__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mobile_nav__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _more_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./more-nav */ "./src/js/more-nav.js");
+/* harmony import */ var _more_nav__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_more_nav__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _section_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./section-header */ "./src/js/section-header.js");
+/* harmony import */ var _section_header__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_section_header__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
-aos__WEBPACK_IMPORTED_MODULE_2___default.a.init();
+
+
+aos__WEBPACK_IMPORTED_MODULE_4___default.a.init();
+
+/***/ }),
+
+/***/ "./src/js/mobile-nav.js":
+/*!******************************!*\
+  !*** ./src/js/mobile-nav.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+function toggleMenu() {
+  $('.hamburger').toggleClass('active');
+  $('.mobile-menu').toggleClass('active');
+  $('body').toggleClass('menu-active');
+}
+
+$(function () {
+  $('.header__menu-button').click(function (e) {
+    e.preventDefault();
+    toggleMenu();
+  });
+
+
+  $('.mobile-menu a, .mobile-menu button').click(function (e) {
+    // We don't want to preventDefault in this case.
+    // The user is probably going to the Client Portal, etc.
+    // But we still want to toggle the menu just in case.
+    // e.preventDefault();
+    toggleMenu();
+  });
+
+});
+
+/***/ }),
+
+/***/ "./src/js/more-nav.js":
+/*!****************************!*\
+  !*** ./src/js/more-nav.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 
 $(function () {
 
-  window.onresize = setHeader;
+  $(window).resize(setHeader)
   var headerContainer = document.getElementsByClassName("header__container")[0];
   var headerLogo = headerContainer.getElementsByClassName("header__logo")[0];
   var navLinks = headerContainer.getElementsByClassName("header__nav-link");
@@ -495,35 +544,40 @@ $(function () {
 
 /***/ }),
 
-/***/ "./src/js/mobile-nav.js":
-/*!******************************!*\
-  !*** ./src/js/mobile-nav.js ***!
-  \******************************/
+/***/ "./src/js/section-header.js":
+/*!**********************************!*\
+  !*** ./src/js/section-header.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
-function toggleMenu() {
-  $('.hamburger').toggleClass('active');
-  $('.mobile-menu').toggleClass('active');
-  $('body').toggleClass('menu-active');
-}
-
+// This adjusts the 'flex-basis' of the section-title__text
+// We need to do this so that the separators "hug" the section-title text
 $(function () {
-  $('.header__menu-button').click(function (e) {
-    e.preventDefault();
-    toggleMenu();
-  });
+  $(window).resize(adjustSectionHeaders);
+  var $sectionTitles = $('.section-title__text');
 
+  function adjustSectionHeaders() {
+    reset();
 
-  $('.mobile-menu a, .mobile-menu button').click(function (e) {
-    // We don't want to preventDefault in this case.
-    // The user is probably going to the Client Portal, etc.
-    // But we still want to toggle the menu just in case.
-    // e.preventDefault();
-    toggleMenu();
-  });
+    $sectionTitles.each(function () {
+      var height = $(this).height();
+      var lineHeight = parseInt($(this).css('line-height'), 10)
 
+      if (height > lineHeight) {
+        $(this).css('flex-basis', 0);
+      }
+    })
+  }
+
+  function reset() {
+    $sectionTitles.each(function () {
+      $(this).css('flex-basis', 'auto');
+    });
+
+  }
+
+  adjustSectionHeaders();
 });
 
 /***/ }),

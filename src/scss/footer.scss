@@ -2,7 +2,8 @@
   background-color: $pebble-black;
   justify-content: center;
   padding-top: 64px;
-  padding-bottom: 48px;
+
+  @include padding-bottom(48px, 72px);
 
   .footer-container {
     padding: 0 4%;
@@ -119,7 +120,7 @@
   }
 
   &.footer--two-column {
-    padding-top: 48px;
+    padding-top: 0;
 
     .section-title,
     .section-sub-title,
@@ -138,14 +139,16 @@
       margin-top: 32px;
     }
 
+    .footer__column-left,
+    .footer__column-right {
+      padding-top: 48px;
+    }
+
     @include breakpoint(large) {
 
-      .footer__column-left {
-        margin-right: 36px;
-      }
-
+      .footer__column-left,
       .footer__column-right {
-        margin-left: 36px;
+        margin-right: 36px;
       }
 
     }

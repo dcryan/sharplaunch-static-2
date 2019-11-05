@@ -3,26 +3,28 @@
   background-position: center;
   background-size: cover;
 
-  padding-top: 64px;
-  padding-bottom: 64px;
+  @include padding-top(64px, 48px);
+  @include padding-bottom(64px, 48px);
 
   .leasing__brokerage-team-title {
     margin-top: 16px;
   }
 
   .leasing__brokerage-team-text {
-    margin-top: 32px;
+    @include margin-top(32px, 24px);
   }
 
+  $team-member-margin: 8px;
+
   .leasing__brokerage-team-members {
-    margin-top: 48px - 8px;
+    @include margin-top(48px - $team-member-margin, 32px - $team-member-margin);
   }
 
   .team-member {
     text-align: center;
     position: relative;
     padding: 24px;
-    margin: 8px 0;
+    margin: $team-member-margin 0;
 
     transition: box-shadow .2s;
 

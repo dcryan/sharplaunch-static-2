@@ -4,9 +4,8 @@
   z-index: 1;
   background-color: $white;
   top: 0;
-  // Make room for the Nav Bar
-  padding-top: 88px;
 
+  padding-top: 64px;
   padding-bottom: 64px;
   padding-left: 32px;
   padding-right: 32px;
@@ -35,7 +34,6 @@
   }
 
   .mobile-menu__line {
-    margin-top: 128px;
     width: 50px;
     height: 1px;
     background-color: $persian-blue;

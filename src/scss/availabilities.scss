@@ -1,8 +1,8 @@
 .availabilities {
   background-image: url("../img/availabilities.png");
   background-position: center;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  @include padding-top(64px, 48px);
+  @include padding-bottom(64px, 48px);
 }
 
 .availability-card {

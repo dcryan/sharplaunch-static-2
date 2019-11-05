@@ -1,11 +1,21 @@
 .tenants {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  @include padding-top(64px, 48px);
+  @include padding-bottom(64px, 48px);
   background-color: #f0f0f0;
 
-  .tenants__text {
-    margin-top: 32px;
+  .tenants__sub-title {
+    margin-top: 16px;
   }
+
+  .tenants__text {
+    @include margin-top(32px, 24px);
+  }
+}
+
+$tenant-box-margin: 16px;
+
+.tenant-box-container {
+  @include margin-top(58px - $tenant-box-margin, 43px - $tenant-box-margin);
 }
 
 .tenant-box {
@@ -19,7 +29,7 @@
   cursor: pointer;
   height: 200px;
   border-radius: 5px;
-  margin-top: 32px;
+  margin-top: $tenant-box-margin;
 
   &:hover {
     box-shadow: 0 8px 24px 0 rgba($almost-black, 0.2);

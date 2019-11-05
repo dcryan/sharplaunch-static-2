@@ -3,20 +3,19 @@
   background-position: center;
   background-size: cover;
 
-  padding-top: 64px;
-  padding-bottom: 64px;
+  @include padding-top(64px, 48px);
+  @include padding-bottom(64px, 48px);
 
   .management__tenant-services-title {
-    margin-top: 32px;
+    margin-top: 16px;
   }
 
   .management__tenant-services-text {
-    margin-top: 32px;
+    @include margin-top(32px, 24px);
   }
 
   .management__tenant-services-box {
-    margin-top: 32px;
-
+    @include margin-top(32px, 24px);
   }
 
   .management__tenant-services-sub-title {

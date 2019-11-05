@@ -1,0 +1,32 @@
+@mixin max-dimensions($maxHeight: unset, $maxWidth: unset) {
+  max-height: $maxHeight;
+  max-width: $maxWidth;
+}
+
+@mixin padding-top($desktop, $mobile) {
+  padding-top: $desktop;
+
+  @include breakpoint(small only) {
+    padding-top: $mobile;
+  }
+}
+
+@mixin padding-bottom($desktop, $mobile) {
+  padding-bottom: $desktop;
+
+  @include breakpoint(small only) {
+    padding-bottom: $mobile;
+  }
+}
+
+// Adjust margin on mobile
+// 64 > 48
+// 48 > 32
+// 32 > 24
+@mixin margin-top($desktop, $mobile) {
+  margin-top: $desktop;
+
+  @include breakpoint(small only) {
+    margin-top: $mobile;
+  }
+}

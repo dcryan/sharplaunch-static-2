@@ -34,5 +34,18 @@
   font-weight: 600;
   color: $persian-blue;
   text-align: center;
-  margin-top: 32px;
+}
+
+
+////@include
+.right-section {
+  position: relative;
+
+  &::before {
+    position: relative;
+    content: "";
+    background-color: red;
+    width: 10px;
+    height: 10px;
+  }
 }

@@ -15,3 +15,21 @@ body {
   padding: 32px;
   background-color: white;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.align-center {
+  -webkit-box-pack: center;
+  justify-content: center;
+}

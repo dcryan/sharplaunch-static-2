@@ -4,7 +4,6 @@
   box-shadow: 0 8px 24px 0 rgba($almost-black, 0.1);
   background-color: $white;
   position: relative;
-  z-index: 2;
 
   &__container {
     height: 100%;
@@ -113,18 +112,6 @@
 
       .more__nav-link {
         margin-top: 8px;
-
-        // a {
-        //   font-weight: 600;
-        //   white-space: nowrap;
-        //   color: $metal-black;
-        //   transition: color .2s;
-        //   cursor: pointer;
-
-        //   &:hover {
-        //     color: rgba($metal-black, .7);
-        //   }
-        // }
       }
     }
   }
@@ -147,6 +134,7 @@
     opacity: 1;
     transition: .2s;
     cursor: pointer;
+    z-index: 2;
 
     &:hover {
       opacity: .8;

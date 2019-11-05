@@ -109,10 +109,10 @@ $caption1-line-height: 14px;
   letter-spacing: normal;
   color: $almost-black;
 
-  // convert so Sub-Head-2 on mobile
+  // convert so Sub-Head-3 on mobile
   @include breakpoint(small only) {
-    font-size: $sub-head2-font-size;
-    line-height: $sub-head2-line-height;
+    font-size: $sub-head3-font-size;
+    line-height: $sub-head3-line-height;
   }
 }
 
