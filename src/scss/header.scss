@@ -49,9 +49,82 @@
       white-space: nowrap;
       color: $metal-black;
       transition: color .2s;
+      cursor: pointer;
 
       &:hover {
         color: rgba($metal-black, .7);
+      }
+    }
+  }
+
+  &__nav-more {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 16px;
+    position: relative;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a,
+    button {
+      font-weight: 600;
+      white-space: nowrap;
+      color: $metal-black;
+      transition: color .2s;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        color: rgba($metal-black, .7);
+      }
+    }
+
+    .header__nav-more-dropdown {
+      position: absolute;
+      right: 0;
+      padding: 16px;
+      min-width: 150px;
+
+      background-color: $white;
+      box-shadow: 0 0 3px rgba($metal-black, .7);
+
+      // Base State
+      $more-menu-transition-duration: .2s;
+
+      top: 90%;
+      opacity: 0;
+      transition: opacity $more-menu-transition-duration ease-in,
+        top $more-menu-transition-duration ease-in;
+
+
+      &.active {
+        opacity: 1;
+        top: 100%;
+      }
+
+      .more__line {
+        width: 50px;
+        height: 1px;
+        background-color: $persian-blue;
+      }
+
+      .more__nav-link {
+        margin-top: 8px;
+
+        // a {
+        //   font-weight: 600;
+        //   white-space: nowrap;
+        //   color: $metal-black;
+        //   transition: color .2s;
+        //   cursor: pointer;
+
+        //   &:hover {
+        //     color: rgba($metal-black, .7);
+        //   }
+        // }
       }
     }
   }
@@ -132,14 +205,26 @@
 
   &--black {
     background-color: $almost-black;
+
+    .header__nav-more-dropdown {
+      background-color: $almost-black;
+    }
   }
 
   &--white-opaque {
-    background-color: rgba($white, .9)
+    background-color: rgba($white, .9);
+
+    .header__nav-more-dropdown {
+      background-color: rgba($white, .9)
+    }
   }
 
   &--black-opaque {
     background-color: rgba($almost-black, .9);
+
+    .header__nav-more-dropdown {
+      background-color: rgba($almost-black, .9);
+    }
   }
 
   &--black,
@@ -148,13 +233,20 @@
       background-color: $white;
     }
 
-    .header__nav-button {
-      a {
+    .header__nav-link,
+    .header__nav-more {
+
+      a,
+      button {
         color: $white;
 
         &:hover {
           color: rgba($white, .7);
         }
+      }
+
+      .more__line {
+        background-color: $white;
       }
     }
   }

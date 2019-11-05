@@ -2677,9 +2677,54 @@ button,
       white-space: nowrap;
       color: #0A0B0F;
       -webkit-transition: color .2s;
-      transition: color .2s; }
+      transition: color .2s;
+      cursor: pointer; }
       .header__nav-link a:hover {
         color: rgba(10, 11, 15, 0.7); }
+  .header__nav-more {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 0 16px;
+    position: relative; }
+    .header__nav-more:last-child {
+      padding-right: 0; }
+    .header__nav-more a,
+    .header__nav-more button {
+      font-weight: 600;
+      white-space: nowrap;
+      color: #0A0B0F;
+      -webkit-transition: color .2s;
+      transition: color .2s;
+      cursor: pointer;
+      outline: none; }
+      .header__nav-more a:hover,
+      .header__nav-more button:hover {
+        color: rgba(10, 11, 15, 0.7); }
+    .header__nav-more .header__nav-more-dropdown {
+      position: absolute;
+      right: 0;
+      padding: 16px;
+      min-width: 150px;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 3px rgba(10, 11, 15, 0.7);
+      top: 90%;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in;
+      transition: opacity 0.2s ease-in, top 0.2s ease-in; }
+      .header__nav-more .header__nav-more-dropdown.active {
+        opacity: 1;
+        top: 100%; }
+      .header__nav-more .header__nav-more-dropdown .more__line {
+        width: 50px;
+        height: 1px;
+        background-color: #304FFE; }
+      .header__nav-more .header__nav-more-dropdown .more__nav-link {
+        margin-top: 8px; }
   .header__nav-button {
     display: -webkit-box;
     display: flex;
@@ -2735,16 +2780,38 @@ button,
     z-index: 1; }
   .header--black {
     background-color: #0A0B0F; }
+    .header--black .header__nav-more-dropdown {
+      background-color: #0A0B0F; }
   .header--white-opaque {
     background-color: rgba(255, 255, 255, 0.9); }
+    .header--white-opaque .header__nav-more-dropdown {
+      background-color: rgba(255, 255, 255, 0.9); }
   .header--black-opaque {
     background-color: rgba(10, 11, 15, 0.9); }
+    .header--black-opaque .header__nav-more-dropdown {
+      background-color: rgba(10, 11, 15, 0.9); }
   .header--black .hamburger div, .header--black-opaque .hamburger div {
     background-color: #FFFFFF; }
-  .header--black .header__nav-button a, .header--black-opaque .header__nav-button a {
+  .header--black .header__nav-link a,
+  .header--black .header__nav-link button,
+  .header--black .header__nav-more a,
+  .header--black .header__nav-more button, .header--black-opaque .header__nav-link a,
+  .header--black-opaque .header__nav-link button,
+  .header--black-opaque .header__nav-more a,
+  .header--black-opaque .header__nav-more button {
     color: #FFFFFF; }
-    .header--black .header__nav-button a:hover, .header--black-opaque .header__nav-button a:hover {
+    .header--black .header__nav-link a:hover,
+    .header--black .header__nav-link button:hover,
+    .header--black .header__nav-more a:hover,
+    .header--black .header__nav-more button:hover, .header--black-opaque .header__nav-link a:hover,
+    .header--black-opaque .header__nav-link button:hover,
+    .header--black-opaque .header__nav-more a:hover,
+    .header--black-opaque .header__nav-more button:hover {
       color: rgba(255, 255, 255, 0.7); }
+  .header--black .header__nav-link .more__line,
+  .header--black .header__nav-more .more__line, .header--black-opaque .header__nav-link .more__line,
+  .header--black-opaque .header__nav-more .more__line {
+    background-color: #FFFFFF; }
 
 .mobile-menu {
   position: absolute;
